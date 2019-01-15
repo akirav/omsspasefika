@@ -1,0 +1,86 @@
+.row {
+  margin: 0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.header {
+  background-color:#66A366;
+  font-family: "Arial Black", Gadget, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 20px;
+  color: #363636;
+}
+
+.header p {
+  margin: 0;
+}
+
+.col-sm-3, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12 {
+  padding-left: 0;
+  padding-right: 5px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+}
+
+.content p {
+  font-family: 'Vollkorn', serif;
+  font-size: 130%;
+
+}
+
+.content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content ul {
+  list-style-position: outside;
+  padding-left: 15px;
+  font-family: 'Vollkorn', serif;
+  font-size: 115%;
+  line-height: 27px;
+}
+
+.right-half {
+  float: right;
+  width: 50%;
+}
+
+#pmgroup-img-block {
+  float: right;
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(102, 163, 102, 5); 
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+   /* Select the down or left scroll button when it's being hovered by the mouse */
+}
+
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
