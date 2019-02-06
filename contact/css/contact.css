@@ -105,3 +105,16 @@
   border-top: 124.8px solid transparent;
   border-bottom: 124.8px solid transparent;
 }
+
+.header p {
+  font-family: 'Vollkorn', serif;
+  font-size: 27px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.description p, .description ul {
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  padding-left: 35px;
+}

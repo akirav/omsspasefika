@@ -1,24 +1,25 @@
 function initialize() {
   constructBasicSections();
-  loadFirstSection();
+  loadAllSection();
   registerClickEvents();
 }
 
 function constructBasicSections() {
   var html = "";
   for (var i = 0; i < sectionData.length; i++) {
-    html = html.concat(getSectionTemplate(sectionData[i].sectionName, i));
+    html = html.concat(getSectionTemplate(sectionData[i].sectionName,sectionData[i].sectionDetail, i));
   }
   $("#gallery").html(html);
 }
 
-function getSectionTemplate(sectionName, id) {
+function getSectionTemplate(sectionName, sectionDetail, id) {
   var html =
    '<div class="row row-eq-height">\
      <div class="col-sm-12">\
        <div class="header">\
-         <p>' + sectionName + ' <span class="glyphicon glyphicon-collapse-down"></p>\
+         <p>' + sectionName + ' <span class=""></p>\
        </div>\
+       <p>' + sectionDetail + ' </p>\
        <div class="content" id="' + id + '">\
        </div>\
      </div>\
@@ -26,15 +27,19 @@ function getSectionTemplate(sectionName, id) {
    return html;
 }
 
-function loadFirstSection() {
-  loadImages(0);
-  updateCollapseGlyphicon($("#0").prev());
+
+
+function loadAllSection() {
+  var i;
+  for(i = 0; i < sectionData.length;i++)
+    loadImages(i);
+  // console.log(sectionData.length);
 }
 
 function registerClickEvents() {
-  $(".header").click(function() {
-    sectionRespondToClick($(this));
-  });
+  // $(".header").click(function() {
+  //   sectionRespondToClick($(this));
+  // });
 
   const GO_LEFT = -1
   const GO_RIGHT = 1
