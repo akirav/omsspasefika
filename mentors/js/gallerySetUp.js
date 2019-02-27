@@ -102,10 +102,14 @@ function newImageForModal(sectionId, order) {
   var picArray = sectionData[sectionId].pictures;
   var imgSrc = picArray[order].src;
   var imgCaption = picArray[order].caption;
+  var imgEmail = picArray[order].email;
+  var imgMajor = picArray[order].major;
 
   $("#modal-pic").attr("src", imgSrc);
   $("#modal-pic").attr("order", order);
   $("#picture-caption").text(imgCaption);
+  $("#picture-email").text(imgEmail);
+  $("#picture-major").text(imgMajor);
 
   if (order == 0) {
     $("#left").css("color", "#a6a6a6");

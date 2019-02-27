@@ -33,7 +33,7 @@ function mobileAdjustment() {
 }
 
 function adjustLayout() {
-  $("#web-title").html("<h3> OMSS HUI </h3>");  // change title to be shorter and smaller
+  $("#web-title").html("<h3> 3P </h3>");  // change title to be shorter and smaller
   $("#menu").css("display", "block");           // change menu to dropdown, can comment this out to see the flex effect
   $(".row").css("display", "block");            // change row to column layout for better readibility on smaller screen
   $(".col-sm-3").css("margin-left", "0");       // takes out "paddings" between the columns
